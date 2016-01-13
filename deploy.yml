@@ -1,0 +1,18 @@
+---
+region: us-east-1
+iam:
+  policy:
+    name: emailLambda
+  role:
+    name: emailLambda
+lambda:
+  name: SendEmail
+  zipfile_name: SendEmail.zip
+  description: Send email via SES
+  path: .
+  handler: index.handler
+  runtime: nodejs
+  memory_size: 128
+  timeout: 3
+  mode: event
+  test_data: _testEvent.json
