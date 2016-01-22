@@ -6,9 +6,9 @@ iam:
   role:
     name: emailLambda
 lambda:
-  name: SendEmail
-  zipfile_name: SendEmail.zip
-  description: Send email via SES
+  name: processPromptReply
+  zipfile_name: processPromptReploy.zip
+  description: parse incoming prompt replies from S3 bucket
   path: .
   handler: index.handler
   runtime: nodejs
