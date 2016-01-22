@@ -9,7 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.2.32",
+    "mailparser": "^0.5.3",
     "markup-js": "^1.5.21",
-    "parse-reply": "0.0.4"
+    "parse-reply": "0.0.4",
+    "promise": "^7.1.1",
+    "querystring": "^0.2.0"
   }
 }
